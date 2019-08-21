@@ -1,18 +1,18 @@
 'use strict';
 
-function collectSameElements(collectionA, objectB) { 
-	var c = new Array();
-	var collectionB=objectB.value; 
+function collectSameElements(collectionA, collectionB) { 
+	var result = new Array();
+	var collectionC=collectionB.value; 
 	for(var i = 0; i<collectionA.length ; i++) 
 	{ 
-		for(var j = 0; j<collectionB.length ; j++) 
+		for(var j = 0; j<collectionC.length ; j++) 
 		{ 
-			if (collectionA[i] == collectionB[j]) 
+			if (collectionA[i] == collectionC[j]) 
 			{	 
-				c.push(collectionA[i]);
+				result.push(collectionA[i]);
 				break; 
 			} 
 		} 
 	}		 
-	return c; 
+	return result; 
 }
